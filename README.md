@@ -1,4 +1,4 @@
 
 
 
-# [@senator_tea](https://telegram.me/senator_tea)
+# [@ezarinfo](https://telegram.me/ezarinfo)
