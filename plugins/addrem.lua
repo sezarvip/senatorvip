@@ -34,9 +34,9 @@ mute_audio = "no"
                   }
       }
       save_data(_config.group.data, group)
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 added\n*Channel:* @senator_tea', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 added\n*Channel:* @sezarinfo', 1)
 else
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 add\n*Channel:* @senator_tea', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 add\n*Channel:* @sezarinfo', 1)
 end
 end
 local function remgroup(msg)
@@ -45,9 +45,9 @@ local groupa = group[tostring(msg.chat_id)]
 if groupa then
 group[tostring(msg.chat_id)] = nil
       save_data(_config.group.data, group)
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 removed\n*Channel:* @senator_tea', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 removed\n*Channel:* @sezarinfo', 1)
 else
-tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 remove\n*Channel:* @senator_tea', 1)
+tg.sendMessage(msg.chat_id, msg.id_, 1, 'SuperGroup 💈💈 remove\n*Channel:* @sezarinfo', 1)
 end
 end
 
