@@ -23,4 +23,4 @@ patterns = {
 run = run
 }
 
---@mafia_cli
+--@sezarinfo
