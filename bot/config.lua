@@ -30,7 +30,7 @@ do local _ = {
   },
 robot = {
     ,--id bot
-    0
+    372557073
   }
 }
 return _
