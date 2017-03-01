@@ -8,7 +8,7 @@ local addgroup = group[tostring(msg.chat_id)]
 end	
 return {
   patterns = {
-   "^[/#!](rem)$",
+   "^[/#!](leave)$",
   },
   run = run
 }
