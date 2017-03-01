@@ -17,6 +17,7 @@ pm1 = [[⚜🔐دستـورات اسمـارت🔐⚜
 🔹!lock tgservice  =>قفل سرویس 
 🔹!lock contact =>قفل شمارہ 
 🔹!lock game => قفل بازے تحت وب 
+🔹!lock sticker  =>قفل استیڪر
 🔹!mute all  => ممنوعیت گپ
 🔹!mute audio  =>ممنوعیت آهنگ
 🔹!mute voice => ممنوعیت صدا
@@ -24,7 +25,6 @@ pm1 = [[⚜🔐دستـورات اسمـارت🔐⚜
 🔹!mute gifs  =>ممنوعیت گیف
 🔹!mute video  =>ممنوعیت فیلم
 🔹!mute document  =>ممنوعیت فایل
-🔹!mute sticker  =>ممنوعیت استیڪر
 🔴براے  لغو قفل ها بہ جاے lock از ڪلمہ unlock استفادہ ڪنید  
 🔴براے لغو ممنوعیت بہ جاے  mute از ڪلمہ unmte استفادہ ڪنید
  
