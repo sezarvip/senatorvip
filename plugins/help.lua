@@ -2,7 +2,7 @@ local function run(msg, matches)
 local group = load_data('bot/group.json') 
 local addgroup = group[tostring(msg.chat_id)] 
 if matches[1] == 'help' and is_momod(msg) or is_owner(msg) and addgroup then
-pm1 = [[⚜🔐دستـورات اسمـارت🔐⚜
+pm1 = [[⚜🔐دستـورات ربـات🔐⚜
 🔹!lock links  =>قفل لینڪ
 🔹!lock edit =>قفل ویرایش پیام 
 🔹!lock fwd  =>قفل فروارد 
