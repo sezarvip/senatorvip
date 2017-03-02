@@ -479,7 +479,7 @@ local function mute_photo_group(msg, target)
 local group = load_data('bot/group.json')
   local mute_all = group[tostring(target)]['settings']['mute_photo']
   if mute_all  == 'yes' then
-    pm = '<b>Photo</b> 💈💈 <b>unmute</b>\n*Channel:* @senator_tea'
+    pm = '<b>Photo</b> 💈💈 <b>unmute</b>\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
     group[tostring(target)]['settings']['mute_photo'] = 'yes'
