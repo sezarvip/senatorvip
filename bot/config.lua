@@ -29,7 +29,7 @@ do local _ = {
     304240834 --id sudo
   },
 robot = {
-    372557073,--id bot
+    354343636,--id bot
     
   }
 }
