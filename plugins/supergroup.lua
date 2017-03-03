@@ -2,7 +2,7 @@ local function lock_group_links(msg, target)
 local group = load_data('bot/group.json')
   local group_link_lock = group[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'yes' then
-    pm = '<اb>Link</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = '<اb>لینڪ</b> <b> </b> <b>قفـل است</b>\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_link'] = 'yes'
