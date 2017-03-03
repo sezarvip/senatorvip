@@ -2,12 +2,12 @@ local function lock_group_links(msg, target)
 local group = load_data('bot/group.json')
   local group_link_lock = group[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'yes' then
-    pm = 'لینڪ قفـل است\n*Channel:* @sezarinfo '
+    pm = 'ارسـال لینـڪ درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_link'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Link</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال لینـڪ درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -15,12 +15,12 @@ local function lock_group_username(msg, target)
 local group = load_data('bot/group.json')
   local group_username_lock = group[tostring(target)]['settings']['lock_username']
   if group_username_lock == 'yes' then
-    pm = '<b>username</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال یـوزرنیـم درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_username'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>username</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال یـوزرنیـم درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -28,12 +28,12 @@ local function lock_group_fosh(msg, target)
 local group = load_data('bot/group.json')
   local group_fosh_lock = group[tostring(target)]['settings']['lock_fosh']
   if group_fosh_lock == 'yes' then
-    pm = '<b>Fosh</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال فحـش درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_fosh'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Fosh</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال فحـش درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -42,12 +42,12 @@ local function lock_group_contact(msg, target)
 local group = load_data('bot/group.json')
   local group_contact_lock = group[tostring(target)]['settings']['lock_contact']
   if group_contact_lock == 'yes' then
-    pm = '<b>Contact</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال شمـاره درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_contact'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Contact</b> <b>💈💈</b> <b>locked\n*Channel:* @sezarinfo'
+    pm = 'ارسـال شمـاره درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -56,12 +56,12 @@ local function lock_group_game(msg, target)
 local group = load_data('bot/group.json')
   local group_game_lock = group[tostring(target)]['settings']['lock_game']
   if group_game_lock == 'yes' then
-    pm = '<b>Game</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال بـازی درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_game'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Game</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال بـازی درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -70,12 +70,12 @@ local function lock_group_bot(msg, target)
 local group = load_data('bot/group.json')
   local group_bot_lock = group[tostring(target)]['settings']['lock_bot']
   if group_bot_lock == 'yes' then
-    pm = '<b>Bot api</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo'
+    pm = 'اضـافه ڪـردن ربـات درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_bot'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Bot api</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'اضـافه ڪـردن ربـات درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -83,12 +83,12 @@ local function lock_group_edit(msg, target)
 local group = load_data('bot/group.json')
   local group_edit_lock = group[tostring(target)]['settings']['lock_edit']
   if group_edit_lock == 'yes' then
-    pm = '<b>Edite</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ویـرایـش پیـام درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_edit'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Edite</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ویـرایـش پیـام درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -96,12 +96,12 @@ local function lock_group_fwd(msg, target)
 local group = load_data('bot/group.json')
   local group_fwd_lock = group[tostring(target)]['settings']['lock_fwd']
   if group_fwd_lock == 'yes' then
-    pm = '<b>Fwd</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'فـروارد درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_fwd'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Fwd</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm = 'فـروارد درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -109,12 +109,12 @@ local function lock_group_spam(msg, target)
 local group = load_data('bot/group.json')
   local group_spam_lock = group[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'yes' then
-    pm = '<b>Spem</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال اسـپم درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   else
     group[tostring(target)]['settings']['lock_spam'] = 'yes'
     save_data(_config.group.data, group)
-    pm= '<b>Spem</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm= 'ارسـال اسـپم درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -122,12 +122,12 @@ local function lock_group_sticker(msg, target)
 local group = load_data('bot/group.json')
   local group_sticker_lock = group[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'yes' then
-    pm = '<b>sticker</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال استیـڪر درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>sticker</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال استیـڪر درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -135,12 +135,12 @@ local function lock_group_english(msg, target)
 local group = load_data('bot/group.json')
   local group_english_lock = group[tostring(target)]['settings']['lock_english']
   if group_english_lock == 'yes' then
-    pm = '<b>english</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال متـن انگلیـسی درگـروه قفـل است\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_english'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>english</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال متـن انگلیـسی درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -148,12 +148,12 @@ local function lock_group_persian(msg, target)
 local group = load_data('bot/group.json')
   local group_persian_lock = group[tostring(target)]['settings']['lock_persian']
   if group_persian_lock == 'yes' then
-    pm = '<b>persian</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال متـن فـارسـی درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_persian'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>persian</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال متـن فـارسـی درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -161,12 +161,12 @@ local function lock_group_tgservice(msg, target)
 local group = load_data('bot/group.json')
   local group_tgservice_lock = group[tostring(target)]['settings']['lock_tgservice']
   if group_tgservice_lock == 'yes' then
-    pm = '<b>tgservice</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'اعـلان ورود و خـروج درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_tgservice'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>tgservice</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'اعـلان ورود وخـروج درگـروه قفـل شـد\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -174,12 +174,12 @@ local function lock_group_tag(msg, target)
 local group = load_data('bot/group.json')
   local group_tag_lock = group[tostring(target)]['settings']['lock_tag']
   if group_tag_lock == 'yes' then
-    pm = '<b>tag</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال تـگ درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_tag'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>tag</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال تـگ درگـروه قفـل شـد\n*Channel:* @sezarinfo '
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
@@ -187,12 +187,12 @@ local function lock_group_inline(msg, target)
 local group = load_data('bot/group.json')
   local group_inline_lock = group[tostring(target)]['settings']['lock_inline']
   if group_inline_lock == 'yes' then
-    pm = '<b>Inline</b> <b>💈💈</b> <b>lock</b>\n*Channel:* @sezarinfo '
+    pm = 'ارسـال لینـڪ شیشـه ای درگـروه قفـل اسـت\n*Channel:* @sezarinfo '
   tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
 else
     group[tostring(target)]['settings']['lock_inline'] = 'yes'
     save_data(_config.group.data, group)
-    pm = '<b>Inline</b> <b>💈💈</b> <b>locked</b>\n*Channel:* @sezarinfo'
+    pm = 'ارسـال لینـڪ شیشـه ای درگـروه قفـل اسـت\n*Channel:* @sezarinfo'
 tg.sendMessage(msg.chat_id_, 0, 1, pm, 1, 'html')
   end
 end
